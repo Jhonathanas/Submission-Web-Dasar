@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+   
+.navbar-container {
+    width: 100%;
+    padding: 10px ;
+    margin-inline: auto;
+    background-color: #FBA834;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid black;
+    z-index: 999;
+}
+   
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+   
+.nav-list li {
+    list-style-type: none;
+  }
+   
+.nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+   
+    transition: all 0.2s ease-in-out;
+}
+   
+.nav-list li:hover a {
+    background-color: #425c77;
+    color: white;
+}
+
+main{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    flex: 1;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.content {
+  display: flex;
+  align-items: center;
+  background-image: url('https://ik.imagekit.io/tvlk/loc-asset/gNr3hLh55ZCkPJisyxFK-v9MmzxPu57ZRVI+10VZ2S4b1PNW4T++cbA6yK4gzhAhs9o2HLZ9vs7gy3rpcIU+oKi5EygzQLRjTUv7fRblEVA=/images/1506589300090-1200x600-FIT_AND_TRIM-85abfaee9626b98ebc94e0e2b886617b.jpeg?_src=imagekit&tr=dpr-3');
+  background-size: cover;
+  height: 100vh;
+  padding: 100px;
+}
+ 
+.content-description {
+  flex: 1;
+  background-color: #FBA834; /* Warna latar belakang dengan transparansi 70% */
+  border-radius: 100px;
+  padding: 50px;
+  margin: 50px;  
+}
+ 
+.content-description .title {
+  margin-block: 1rem;
+  font-size: 6.4rem;
+}
+.content-description .title span{
+  color: #333A73;
+}
+
+.content-description .title span:hover{
+  color: #91ff00;
+}
+.content-description p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  cursor: pointer;
+}
+ 
+.content-description button {
+  padding: 0.8rem 2.5rem;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  margin-block-start: 1rem;
+  background-color: #2d3e50;
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+.content-description button a{
+  color: white;
+  text-decoration: none;
+}
+.content-description button:hover {
+  border: 3px solid #2d3e50;
+  background-color: transparent;
+  color: #2d3e50;
+
+}
+ 
+.content-image {
+  flex: 1;
+  display: flex;
+}
+ 
+.content-image img {
+  width: 300px;
+  margin: auto;
+}
+ 
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+  z-index: 999;
+}
+
+main aside img{
+  width: 30px;
+}
+main aside .social-media {
+  height: 100%;
+  display: flex;
+}
+ 
+main aside .social-media ul {
+  padding: 1.5rem 1rem;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin: auto;
+  background-color: #7b8386;
+  border: 1px solid;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+ 
+main aside .social-media li {
+  list-style-type: none;
+}
+ 
+main aside .social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+ 
+  transition: all 0.1s ease-in-out;
+}
+ 
+main aside .social-media li a:hover {
+  color: #125dad;
+}
+
+.pemerintah{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #FBA834;
+  width: 100%;
+  gap: 250px;
+  padding: 100px;
+  position: relative;
+}
+
+.title-pemerintahan{
+  position: absolute;
+  font-size: 5rem;
+  top: 0;
+  padding-top: 50px;
+  text-align: center;
+}
+.bupati{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: flex-end;
+}
+.bupati img{
+  height: 500px;
+}
+
+#bupati h2{
+  text-align: left;
+}
+#wakil h1,h2{
+  text-align: right;
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  height: auto;
+  padding:100px;
+  background-color: #333A73;
+  color: #FBA834;
+}
+
+.About-article{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 200px;
+  font-size: 1rem;
+}
+
+.About-article h1{
+  font-size: 100px;
+}
+
+.About-article article{
+  width: 70%;
+}
+
+.About-article img{
+  width: 300px;
+}
+footer{
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: #FBA834;
+}
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+      flex-direction: column;
+      padding: 0px;
+      text-align: left;
+      width: 100vw;
+      font-size: 10px;
+    }
+    .nav-list ul {
+      gap: 10px;
+  }
+  .nav-list li a{
+    padding: 0;
+    font-size: 13px;
+  }
+
+  .content{
+    flex-direction: column;
+  }
+  .content-image {
+    display: flex;
+  }
+
+  .content-image img{
+    width: 200px; 
+ }
+  .content-description {
+    border-radius: 10PX;
+    padding: 10px;
+    margin-bottom:0px;  
+  }
+  .content-description .title {
+    font-size: 50px;
+  }
+  .content-description p {
+    font-size: 10px;
+    line-height: 40px;
+  }
+  
+  .pemerintah{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #FBA834;
+    width: 100vw;
+    gap: 0;
+    padding: 0 20px;
+    position: relative;
+  }
+  .title-pemerintahan{
+    position: relative;
+    font-size: 40px;
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  .about{
+    height: auto;
+    padding:10px;
+    background-color: #333A73;
+    color: #FBA834;
+  }
+  .About-article{
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    font-size: 1rem;
+  }
+  .About-article h1{
+    font-size: 50px;
+  }
+  .About-article article{
+    width: 100vw;
+    padding: 20px;
+    
+  }
+  .About-article img{
+    width: 300px;
+    margin: auto;
+  }
+
+  footer{
+    width: 100vw;
+  }
+}
